@@ -20,7 +20,7 @@ The idea is that you can create an exported variable in your script to more rapi
 
 ![After setting up the standard dictionary (standard_dict), every element added to the array becomes a duplicate of standard_dict](/img/PresetDictArray.png)
 
-After creating new elements to the array, you can change the k/v pairs as you see fit in each element, including deleting and adding new keys. If you want to prevent the ability to add or remove keys, turn on `auto_standardize` under the **Standardize** inspector group.
+After creating new elements to the array, you can change the k/v pairs as you see fit in each element, including deleting and adding new keys. If you want to prevent the ability to add or remove keys, turn on `auto_standardize` under the **Standardize** inspector group (*Warning: see below*).
 
 ![The Standardize inspector group](/img/AutoStandardize.png)
 
