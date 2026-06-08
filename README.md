@@ -1,11 +1,15 @@
 # PresetDictArray
-Creates a `Resource` holding an `Array[Dictionary]` that can only hold `Dictionary` elements of a preset format.
+Creates a new `Resource` class called `PresetDictArray` holding an `Array[Dictionary]` that can only hold `Dictionary` elements of a preset format.
 
 ## Compatibility
 This has been tested on Godot 4.6, but would certainly work for several older 4.x versions of Godot.
 
 ## Installation
 You can clone this repo, but you could also simply copy `/addons/PresetDictArray/PresetDictArray.gd` and put that file anywhere in your project's files and it would work.
+Since this is just a script rather than a plugin, it will not appear in your Plugins menu.
+
+### Uninstallation
+Simply delete the file and/or folder.
 
 ### Recommendation
 While it has nothing to do directly with `PresetDictArray`, I'd like to shout out the excellent [Dictionary Inspector](https://github.com/don-tnowe/godot-dictionary-inspector) plugin.
