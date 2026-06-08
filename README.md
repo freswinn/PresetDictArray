@@ -28,4 +28,7 @@ After creating new elements to the array, you can change the k/v pairs as you se
 You can also set `PresetDictArray` to automatically force current elements in the array to conform to `standard_dict`. To do this, set `auto_standardize` to true, or use the `standardize_array()` function. This is a destructive method, such that:
 - Any key (and its value) that is in an element of `array` and not in `standard_dict` will be removed.
 - Any key in `standard_dict` that has been changed will be counted as having been removed.
+- Any key in `standard_dict` that is not in an element of `array` will be added with its default value.
 - Changing the values in `standard_dict` does **not** change any currently-set value in `array`.
+
+**Note:** Changes made by Auto-Standardize and the Standardize Array function/tool button do not immediately appear in the inspector. Click off of the node and then back onto it, and it should update.
