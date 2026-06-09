@@ -12,7 +12,7 @@ Since this is just a script rather than a plugin, it will not appear in your Plu
 Simply delete the file and/or folder.
 
 ### Recommendation
-While it has nothing to do directly with `PresetDictArray`, I'd like to shout out the excellent [Dictionary Inspector](https://github.com/don-tnowe/godot-dictionary-inspector) plugin.
+While it has nothing to do directly with `PresetDictArray`, I'd like to shout out the excellent [Dictionary Inspector](https://github.com/don-tnowe/godot-dictionary-inspector) plugin, which is visible in the screenshots here.
 
 # What It Does
 `PresetDictArray` is a `Resource` that contains two variables: `standard_dict` (a dictionary) and `array` (an `Array[Dictionary]`). Any time you add a new element to `array`, that element becomes a copy of `standard_dict` automatically.
