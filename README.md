@@ -4,15 +4,14 @@ Creates a new `Resource` class called `PresetDictArray` holding an `Array[Dictio
 ## Compatibility
 This has been tested on Godot 4.6, but would certainly work for several older 4.x versions of Godot.
 
+This does not seem to be compatible with the otherwise excellent plugin [Dictionary Inspector](https://github.com/don-tnowe/godot-dictionary-inspector).
+
 ## Installation
 You can clone this repo, but you could also simply copy `/addons/PresetDictArray/PresetDictArray.gd` and put that file anywhere in your project's files and it would work.
 Since this is just a script rather than a plugin, it will not appear in your Plugins menu.
 
 ### Uninstallation
 Simply delete the file and/or folder.
-
-### Recommendation
-While it has nothing to do directly with `PresetDictArray`, I'd like to shout out the excellent [Dictionary Inspector](https://github.com/don-tnowe/godot-dictionary-inspector) plugin, which is visible in the screenshots here.
 
 # What It Does
 `PresetDictArray` is a `Resource` that contains two variables: `standard_dict` (a dictionary) and `array` (an `Array[Dictionary]`). Any time you add a new element to `array`, that element becomes a copy of `standard_dict` automatically.
