@@ -20,7 +20,7 @@ Simply delete the files and/or folder.
 
 I personally like to add another line for the "name" of the resource at the start of this script, but didn't include it here so as to keep it more general purpose. I do that so it shows up in the inspector more clearly labeled. That line would just look like this in the `PresetDict.gd` file:
 ```
-@export var resource_name : String
+@export var res_name : String
 ```
 
 ## PresetDictArray
