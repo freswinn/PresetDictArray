@@ -24,7 +24,7 @@ I personally like to add another line for the "name" of the resource at the star
 ```
 
 ## PresetDictArray
-`PresetDictArray` is a `Resource` that contains two variables: `standard_dict` (a dictionary) and `array` (an `Array[Dictionary]`). Any time you add a new element to `array`, that element becomes a copy of `standard_dict` automatically.
+`PresetDictArray` is a `Resource` that contains two variables: `standard_dict` (a dictionary) and `array` (an `Array[Dictionary]`). Any time you add a new element to `array`, that element becomes a copy of `standard_dict` automatically (`standard_dict` is under the **Standardization** group).
 
 The idea is that you can create an exported variable in your script to more rapidly create sets of standardized Dictionaries quickly, especially through the inspector.
 ```
@@ -33,9 +33,9 @@ The idea is that you can create an exported variable in your script to more rapi
 
 ![After setting up the standard dictionary (standard_dict), every element added to the array becomes a duplicate of standard_dict](/img/PresetDictArray.png)
 
-After creating new elements to the array, you can change the k/v pairs as you see fit in each element, including deleting and adding new keys. If you want to prevent the ability to add or remove keys, turn on `auto_standardize` under the **Standardize** inspector group (*Warning: see below*).
+After creating new elements to the array, you can change the k/v pairs as you see fit in each element, including deleting and adding new keys. If you want to prevent the ability to add or remove keys, turn on `auto_standardize` under the **Standardization** inspector group (*Warning: see below*).
 
-![The Standardize inspector group](/img/AutoStandardize.png)
+![The Standardization inspector group](/img/AutoStandardize.png)
 
 ## Auto-Standardize, and the Standardize Array tool button
 You can also set `PresetDictArray` to automatically force current elements in the array to conform to `standard_dict`. To do this, set `auto_standardize` to true, or use the `standardize_array()` function. This is a destructive method, such that:
