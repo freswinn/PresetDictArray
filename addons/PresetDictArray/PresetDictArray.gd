@@ -13,6 +13,22 @@ class_name PresetDictArray extends Resource
 #                       ░██
 #                       ░██
 
+## Array containing dictionaries. New elements in the array will be copies of
+## [member standard_dict], found under the [b]Standardization[/b] group.
+@export var array : Array[Dictionary] = [] :
+	set(n):
+		var prev = array
+		if n.size() > prev.size():
+			prev.append(standard_dict)
+			array = prev
+		else:
+			array = n
+		if auto_standardize:
+			standardize_array()
+
+
+@export_group("Standardization")
+
 ## This is the [Dictionary] that is appended to [member array] whenever you add
 ## a new element to the [Array] through the inspector. Values set in the
 ## dictionary will be the default values applied to the respective keys.[br]
@@ -27,21 +43,6 @@ class_name PresetDictArray extends Resource
 			standardize_array()
 
 
-## Array containing dictionaries. New elements in the array will be copies of
-## [member standard_dict].
-@export var array : Array[Dictionary] = [] :
-	set(n):
-		var prev = array
-		if n.size() > prev.size():
-			prev.append(standard_dict)
-			array = prev
-		else:
-			array = n
-		if auto_standardize:
-			standardize_array()
-
-
-@export_group("Standardize")
 ## When set to true, changes to [member standard_dict] will automatically change
 ## [member array] via [method standardize_array].[br]
 ## Note: [method standardize_array] is destructive; if there is data stored in
