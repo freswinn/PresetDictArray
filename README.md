@@ -4,7 +4,7 @@ Creates a new `Resource` class called `PresetDictArray` holding an `Array[Dictio
 ## Compatibility
 This has been tested on Godot 4.6, but would certainly work for several older 4.x versions of Godot.
 
-This does not seem to be compatible with the otherwise excellent plugin [Dictionary Inspector](https://github.com/don-tnowe/godot-dictionary-inspector).
+This seems to conflict with the otherwise excellent plugin [Dictionary Inspector](https://github.com/don-tnowe/godot-dictionary-inspector).
 
 ## Installation
 You can clone this repo, but you could also simply copy `/addons/PresetDictArray/PresetDictArray.gd` and put that file anywhere in your project's files and it would work.
